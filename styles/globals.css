@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* CSS Variables For Colors */ 
+        --periwinkle: hsl(250, 47%, 85%);
+        --pompnpower: hsl(266, 17%, 46%);
+        --delftblue:  hsl(222, 29%, 27%);
+        --gunmetal:   hsl(197, 47%, 18%);
+        --platinum:   hsl(0, 0%, 92%);
+    } 
+  }
+
+
+@layer components {
+    body {
+      overflow-x: hidden;
+    }
+  }
+

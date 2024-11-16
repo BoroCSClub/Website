@@ -1,0 +1,89 @@
+import { useState } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+
+# Getting Started with Pygame
+
+Welcome to a beginner's guide on how to get started with Pygame in Replit. Pygame is a set of Python modules designed for creating video games. It's user-friendly and perfect for those new to game programming. In this tutorial, we'll cover setting up your environment and creating a simple "Hello, Pygame" application.
+
+## Prerequisites
+
+Before we start, ensure you have:
+
+- A basic understanding of Python.
+- An account on [Replit.com](https://replit.com/).
+
+## Setting Up Your Replit Environment
+
+First, let’s create a new Python project in Replit:
+
+1. Log into your [Replit account](https://replit.com/login).
+2. Click on the "+ Create" button in the top right corner.
+3. Select "Python" as the language.
+4. Give your repl a descriptive name like "PygameProject".
+
+<Tabs>
+<TabList>
+<Tab>Step Image</Tab>
+<Tab>Pygame Selection</Tab>
+</TabList>
+<TabPanel>
+![Create Repl](https://your-image-host.com/create-repl.png)
+</TabPanel>
+<TabPanel>
+![Pygame Selection](https://your-image-host.com/pygame-selection.png)
+</TabPanel>
+</Tabs>
+
+## Writing Your First Pygame Script
+
+Let’s create a simple script that opens a window using Pygame:
+
+```python
+import pygame
+import sys
+
+# Initialize Pygame
+pygame.init()
+
+# Set up the display
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption('Hello, Pygame!')
+
+# Main game loop
+running = true
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = false
+
+    pygame.display.flip()
+
+pygame.quit()
+sys.exit()
+```
+
+## Running Your Code
+
+To run your script:
+
+1. Press the "Run" button at the top of the Replit editor.
+2. You should see a new window titled "Hello, Pygame!" displaying an empty 640x480 window.
+
+
+## Next Steps
+
+Consider expanding your project with additional features like:
+
+- Graphics and sounds.
+- More input event handling.
+- Game logic and enemy movements.
+
+You can find more detailed resources on Pygame here:
+
+- [Official Pygame Documentation](https://www.pygame.org/docs/)
+- [Pygame Tutorials on Real Python](https://realpython.com/pygame-a-primer/)
+
+## Conclusion
+
+Congratulations on taking your first step into game development with Pygame on Replit. Continue experimenting and explore all that Pygame offers to create personalized and engaging games. Happy coding!
